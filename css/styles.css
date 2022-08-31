@@ -24,12 +24,39 @@ ul {
     margin: 0;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+address {
+    font-style: normal;
+}
+
+button {
+    font-family: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 .container {
-    margin-left: auto;
-    margin-right: auto;
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 15px;
     outline: 2px solid tomato;
 }
 
@@ -111,7 +138,6 @@ ul {
 .hero {
     background-color: var(--third-bg-color);
     text-align: center;
-
 }
 
 .hero-title {
@@ -129,16 +155,37 @@ ul {
 /* приховані заголовки */
 
 .hidden-title {
-    visibility: hidden;
-    margin-top: 0;
-    margin-bottom: 0;
+    position: absolute;
+     white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
 }
 
 /* секції */
 
-.section, .team {
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+/* .section:nth-child(2) {
     padding-top: 0;
     padding-bottom: 94px;
+}
+
+.section:nth-child(3) {
+    padding-top: 0;
+    padding-bottom: 94px;
+} */
+
+.section:nth-child(4) {
+    background-color: var(--secondary-bg-color);
 }
 
 
@@ -158,7 +205,7 @@ ul {
     color: var(--tittle-text-color);
 
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 50px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.7;
@@ -171,9 +218,9 @@ ul {
     margin-bottom: 0;
 }
 
-.team {
+/* .team {
     background-color: var(--secondary-bg-color);
-}
+} */
 
 .li-title-team {
     color: var(--tittle-text-color);
@@ -181,6 +228,12 @@ ul {
     font-size: 16px;
     line-height: 1.19px;
     letter-spacing: 0.03em;
+
+    margin-bottom: 10px;
+}
+
+.img-team {
+    margin-bottom: 30px;
 }
 
 .p-team {
@@ -190,6 +243,9 @@ ul {
 }
 
 .li-title-portfolio {
+    margin-top: 0;
+        margin-bottom: 0;
+
     color: var(--tittle-text-color);
     font-weight: 700;
     font-size: 18px;
@@ -198,10 +254,22 @@ ul {
 }
 
 .p-portfolio {
+    margin-top: 0;
+    margin-bottom: 0;
+    
     font-weight: 400;
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
+}
+
+/* Стилізація галереї на сторінці Портфоліо */
+
+.caption-portfolio {
+    padding-top: 20px;
+    padding-right: 24px;
+    padding-bottom: 20px;
+    padding-left: 24px;
 }
 
 
@@ -213,8 +281,7 @@ ul {
 
 .hero-button {
     background-color: var(--accent-color);
-    
-    display: inline-block;
+
     padding: 10px 32px;
     min-width: 216px;
     height: 50px;
@@ -237,6 +304,7 @@ ul {
 .gallery-button {
     background-color: var(--secondary-bg-color);
 
+    padding: 6px 22px;
     color: var(--tittle-text-color);
     font-family: inherit;
     font-weight: 500;
