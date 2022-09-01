@@ -285,6 +285,7 @@ img {
 
 .ul-team > .item {
     background-color: #FFFFFF;
+
 }
 
 .ul-team .item + .item {
@@ -383,6 +384,8 @@ img {
     font-size: 16px;
     line-height: 1.63;
     letter-spacing: 0.03em;
+    border-radius: 4px;
+    border: none;
 }
 
 .gallery-button:hover,
@@ -391,6 +394,16 @@ img {
     color: #FFFFFF;
     cursor: pointer;
 }
+
+.port-button-list {
+    display: flex;
+    justify-content: center;
+}
+
+.port-button-list .item + .item {
+    margin-left: 8px;
+}
+
 
 /* футер */
 
