@@ -224,13 +224,32 @@ img {
     padding-top: 0;
 }
 
+.ul-whatwedo {
+    display: flex;
+}
+
+.ul-whatwedo .item + .item {
+    margin-left: 30px;
+}
+
 .team {
     padding-top: 0;
     background-color: var(--secondary-bg-color);
 }
 
+.benefits {
+    display: flex;
+}
 
-.li-title {
+.benefits .item {
+    width: 270px;
+}
+
+.benefits .item + .item {
+    margin-left: 30px;
+}
+
+.li-title-benefits {
     margin-top: 0;
     margin-bottom: 10px;
     
