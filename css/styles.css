@@ -316,6 +316,18 @@ img {
     letter-spacing: 0.03em;
 }
 
+/* Стилізація галереї на сторінці Портфоліо */
+
+.ul-portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.ul-portfolio .item {
+    flex-basis: calc((100% - 60px) / 3);
+}
+
 .li-title-portfolio {
     margin-bottom: 4px;
 
@@ -336,14 +348,27 @@ img {
     letter-spacing: 0.03em;
 }
 
-/* Стилізація галереї на сторінці Портфоліо */
+.port-card {
+    display: flex;
+    flex-direction: column;
+}
 
-.caption-portfolio {
+.port-card > img {
+    flex-grow: 1;
+}
+
+.port-card > .port-card-footer {
+    background-color: FFFFFF;
+    border-right: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
+}
+/* .caption-portfolio {
     padding-top: 20px;
     padding-right: 24px;
     padding-bottom: 20px;
     padding-left: 24px;
-}
+} */
 
 
 
@@ -374,7 +399,7 @@ img {
     cursor: pointer;
 }
 
-.gallery-button {
+.port-button {
     padding: 6px 22px;
 
     background-color: var(--secondary-bg-color);
@@ -388,8 +413,8 @@ img {
     border: none;
 }
 
-.gallery-button:hover,
-.gallery-button:focus {
+.port-button:hover,
+.port-button:focus {
     background-color: var(--accent-color);
     color: #FFFFFF;
     cursor: pointer;
@@ -398,6 +423,7 @@ img {
 .port-button-list {
     display: flex;
     justify-content: center;
+    margin-bottom: 34px;
 }
 
 .port-button-list .item + .item {
