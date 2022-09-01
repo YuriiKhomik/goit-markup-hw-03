@@ -106,16 +106,24 @@ img {
 
 /* стилізація навігації */
 
+
+
 .site-nav {
-    display:flex
+    display:flex;
+    margin-left: 93px;
 }
 
-/* .site-nav .item {
-    outline: 1px solid red;
-} */
+.main-nav {
+    display: flex;
+    align-items: center;
+}
 
-.site-nav .item:not(:last-child) {
+/* .site-nav .item:not(:last-child) {
     margin-right: 50px;
+} дає такий-же ефект */
+
+.site-nav .item +.item {
+    margin-left: 50px;
 }
 
 .site-nav .link {
@@ -138,6 +146,17 @@ img {
 
 .site-nav .link.current {
     color: var(--accent-color);
+}
+
+/* Авторизація */
+
+.auth-nav {
+    display: flex;
+    margin-left: auto;
+}
+
+.auth-nav .item +.item {
+    margin-left: 50px;
 }
 
 .auth-nav .contact {
