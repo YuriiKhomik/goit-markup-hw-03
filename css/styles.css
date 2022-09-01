@@ -233,7 +233,7 @@ img {
 }
 
 .team {
-    padding-top: 0;
+    padding-top: 94px;
     background-color: var(--secondary-bg-color);
 }
 
@@ -278,8 +278,21 @@ img {
     margin-bottom: 0;
 }
 
+.ul-team {
+    display: flex;
+}
+
+.ul-team > .item {
+    background-color: #FFFFFF;
+}
+
+.ul-team .item + .item {
+    margin-left: 30px;
+}
+
 .li-title-team {
     margin-bottom: 10px;
+    text-align: center;
 
     color: var(--tittle-text-color);
     font-weight: 500;
@@ -293,6 +306,9 @@ img {
 }
 
 .p-team {
+    margin-bottom: 30px;
+    text-align: center;
+    
     font-size: 16px;
     line-height: 1.19;
     letter-spacing: 0.03em;
